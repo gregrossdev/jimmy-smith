@@ -2,9 +2,10 @@
 import Nav from "../components/layout/Nav.astro";
 
 const pageTitle = "Home Page";
-const {title} = Astro.props; 
-import '../styles/global.css';
+const { title } = Astro.props;
+import "../styles/global.css";
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -14,22 +15,24 @@ import '../styles/global.css';
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Nav />
-    <main>
+    <div class="container mx-auto">
+      <Nav />
+      <main>
         <slot />
-    </main>
+      </main>
+    </div>
   </body>
 </html>
 
 <style is:global>
   .title {
-    @apply font-sans text-4xl pt-1 pb-3
+    @apply font-sans text-4xl pt-1 pb-3;
   }
   .date {
-    @apply font-sans text-sm 
+    @apply font-sans text-sm;
   }
-  p, hr {
-    @apply mb-2
+  p,
+  hr {
+    @apply mb-2;
   }
-
 </style>
