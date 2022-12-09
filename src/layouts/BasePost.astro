@@ -1,0 +1,17 @@
+---
+import Base from "./Base.astro";
+
+const {
+	content: { title, date },
+} = Astro.props;
+---
+
+<Base>
+  <article>
+    <time class="date">{date}</time>
+    <h2 class="title">{title}</h2>
+    <hr />
+    <slot />
+  </article>
+</Base>
+

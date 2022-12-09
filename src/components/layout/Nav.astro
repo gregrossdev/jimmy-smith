@@ -1,0 +1,26 @@
+---
+import NavLink from "./NavLink.astro";
+---
+
+<header>
+  <h1>
+    <a href="/" class="site">Name</a>
+  </h1>
+
+  <nav>
+    <NavLink href="/dates">Dates</NavLink>
+    <NavLink href="/about">About</NavLink>
+  </nav>
+</header>
+
+<style>
+  header {
+    @apply my-4
+  }
+	.site {
+		@apply text-xl text-black
+	}
+  nav {
+    @apply flex gap-4;
+  }
+</style>
