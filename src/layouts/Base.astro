@@ -3,7 +3,6 @@ import Nav from "../components/layout/Nav.astro";
 
 const pageTitle = "Home Page";
 const { title } = Astro.props;
-import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -25,6 +24,11 @@ import "../styles/global.css";
 </html>
 
 <style is:global>
+  
+  body {
+    @apply max-w-prose m-auto p-4 bg-slate-50 font-sans leading-relaxed text-left break-words 
+  }
+
   .title {
     @apply font-sans text-4xl pt-1 pb-3;
   }
