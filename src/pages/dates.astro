@@ -19,10 +19,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
 <Base>
   <section>
     <!-- January -->
-    <ul>
+    <ul class="month">
       {
         jan.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -36,10 +36,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- Febuary -->
-    <ul>
+    <ul class="month">
       {
         feb.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -53,10 +53,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- March -->
-    <ul>
+    <ul class="month">
       {
         mar.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -70,10 +70,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- April -->
-    <ul>
+    <ul class="month">
       {
         apr.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -87,10 +87,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- May -->
-    <ul>
+    <ul class="month">
       {
         may.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -104,10 +104,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- June -->
-    <ul>
+    <ul class="month">
       {
         jun.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -121,10 +121,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- July -->
-    <ul>
+    <ul class="month">
       {
         jul.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -138,10 +138,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- August -->
-    <ul>
+    <ul class="month">
       {
         aug.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -155,10 +155,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- Septemeber -->
-    <ul>
+    <ul class="month">
       {
         sep.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -172,10 +172,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- October -->
-    <ul>
+    <ul class="month">
       {
         oct.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -189,10 +189,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- November -->
-    <ul>
+    <ul class="month">
       {
         nov.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -206,10 +206,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
       }
     </ul>
     <!-- Dec -->
-    <ul>
+    <ul class="month">
       {
         dec.map((post) => (
-          <li>
+          <li class="day">
             <a href={post.url}>
               <time datetime={post.frontmatter.date}>
                 {new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -225,13 +225,10 @@ const dec = posts.filter((post) => post.frontmatter.date.slice(0, 3) == "Dec");
   </section>
 </Base>
 <style>
-  /* section {
-        @apply flex flex-wrap gap-4 
-      } */
-  ul {
+  .month {
     @apply bg-slate-100 p-4 my-4 list-none flex flex-wrap rounded shadow-md;
   }
-  ul li {
+  .day {
     @apply p-2;
   }
 </style>
