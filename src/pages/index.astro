@@ -6,6 +6,7 @@ let today = new Date().toLocaleDateString("en-us", {
   month: "short",
   day: "2-digit",
 });
+
 const todaysDate = posts.filter(
   (post) =>
     new Date(post.frontmatter.date).toLocaleDateString("en-us", {
@@ -13,6 +14,8 @@ const todaysDate = posts.filter(
       day: "2-digit",
     }) === today
 );
+const endpoint = todaysDate.map(post => post.url); 
+const forwardURL = `${Astro.url.pathname.replace(/\/$/, '')}${endpoint}`;
 ---
 
 <Base>
@@ -25,6 +28,6 @@ const todaysDate = posts.filter(
   }
 </Base>
 
-<script>
-  
+<script define:vars={{forwardURL}}>
+  // window.location.replace(`${forwardURL}`);
 </script>

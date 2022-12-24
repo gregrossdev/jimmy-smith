@@ -6,6 +6,7 @@ const { title, date } = Astro.props;
   <time class="date">{date}</time>
   <h2 class="title">{title}</h2>
   <hr />
-  <!-- Content Renders Here!!! -->
-  <slot />
+  <section class="prose-lg lg:prose-xl">
+    <slot />
+  </section>
 </article>
