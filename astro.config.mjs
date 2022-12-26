@@ -15,6 +15,18 @@ export default defineConfig({
         },
         collections: [
           {
+            label: 'January',
+            name: 'january',
+            folder: 'src/pages/date/01',
+            create: true,
+            delete: true,
+            fields: [
+              { label: 'Date',  name: 'date', widget: 'datetime',  date_format: "MM.DD", time_format: false },
+              { label: 'Title', name: 'title', widget: 'string'  },
+              { label: 'Body' , name: 'body', widget: 'markdown'},
+            ],
+          },
+          {
             label: 'December',
             name: 'december',
             folder: 'src/pages/date/12',
