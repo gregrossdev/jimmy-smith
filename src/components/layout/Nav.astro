@@ -1,5 +1,14 @@
 ---
 import NavLink from "./NavLink.astro";
+const { date } = Astro.props;
+const formatDate = new Date(date); 
+const options = {
+  month: "2-digit",
+  day: "2-digit",
+};
+let formattedDate = formatDate.toLocaleDateString("UTC", options); 
+console.log(formattedDate)
+const dateEndpoint = `/date/${formattedDate}`; 
 ---
 
 <header>
@@ -9,6 +18,8 @@ import NavLink from "./NavLink.astro";
 
   <nav>
     <NavLink href="/dates">Dates</NavLink>
+    <span> / </span>
+    <NavLink href={dateEndpoint}>{date} </NavLink> 
   </nav>
 </header>
 
