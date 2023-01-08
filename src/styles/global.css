@@ -15,7 +15,3 @@
   @apply font-sans text-sm;
 }
 
-.title {
-  @apply font-sans text-4xl pt-1 pb-3;
-}
-
