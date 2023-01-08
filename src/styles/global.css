@@ -10,8 +10,3 @@
 .main hr {
   @apply mb-2;
 }
-
-.date {
-  @apply font-sans text-sm;
-}
-
