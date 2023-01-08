@@ -27,9 +27,21 @@ export default defineConfig({
             ],
           },
           {
-            label: 'December',
-            name: 'december',
-            folder: 'src/pages/date/12',
+            label: 'January',
+            name: 'january',
+            folder: 'src/pages/date/01',
+            create: true,
+            delete: true,
+            fields: [
+              { label: 'Date',  name: 'date', widget: 'datetime',  date_format: "MM.DD", time_format: false },
+              { label: 'Title', name: 'title', widget: 'string'  },
+              { label: 'Body' , name: 'body', widget: 'markdown'},
+            ],
+          },
+          {
+            label: 'Febuary',
+            name: 'february',
+            folder: 'src/pages/date/02',
             create: true,
             delete: true,
             fields: [
