@@ -27,9 +27,9 @@ export default defineConfig({
             ],
           },
           {
-            label: 'January',
-            name: 'january',
-            folder: 'src/pages/date/01',
+            label: 'Febuary',
+            name: 'february',
+            folder: 'src/pages/date/02',
             create: true,
             delete: true,
             fields: [
@@ -39,9 +39,9 @@ export default defineConfig({
             ],
           },
           {
-            label: 'Febuary',
-            name: 'february',
-            folder: 'src/pages/date/02',
+            label: 'December',
+            name: 'december',
+            folder: 'src/pages/date/12',
             create: true,
             delete: true,
             fields: [
