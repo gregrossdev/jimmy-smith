@@ -21,7 +21,9 @@
 	<meta name="description" content="Dates" />
 </svelte:head>
 
-<div class="flex flex-wrap">
+<h2>Dates Coming Soon</h2>
+
+<!-- <div class="flex flex-wrap">
 {#each calendar as date}
 		{#if date.slice(0, 2) == '01'}
 				<a href={`date/${date}`} class="p-2">{date}</a>
@@ -61,4 +63,4 @@
 				<a href={`date/${date}`} class="p-2">{date}</a>
 		{/if}
 {/each}
-</div>
+</div> -->
