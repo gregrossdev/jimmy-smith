@@ -3,6 +3,8 @@
 	import { onMount } from 'svelte';
 	import { pwaInfo } from 'virtual:pwa-info';
 
+	let ReloadPrompt;
+
 	onMount(async () => {
     if (pwaInfo) {
       const { registerSW } = await import('virtual:pwa-register')
@@ -18,7 +20,7 @@
     }
   })
 
-	let ReloadPrompt;
+	
 	onMount(async () => {
 		pwaInfo && (ReloadPrompt = (await import('$lib/ReloadPrompt.svelte')).default);
 	})
