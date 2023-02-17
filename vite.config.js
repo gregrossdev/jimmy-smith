@@ -13,8 +13,8 @@ const config = {
 				scope: '/',
 				base: '/',
 				manifest: {
-					short_name: 'SvelteKit PWA',
-					name: 'SvelteKit PWA',
+					short_name: 'Jimmy Smith',
+					name: 'Jimmy Smith',
 					start_url: '/',
 					scope: '/',
 					display: 'standalone',
