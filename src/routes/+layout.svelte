@@ -31,7 +31,11 @@
 	{@html webManifest}
 </svelte:head>
 
+<<<<<<< HEAD
 <div class="container mx-auto max-w-prose p-4 font-comic">
+=======
+<div class="container mx-auto max-w-prose py-4">
+>>>>>>> 3967c20d9c0844fbc01931c001ae47b9d282d561
 	<nav class="rounded-lg mb-4">
 		<a class="normal-case text-xl pr-4" href="/">Home</a>
 		<a class="normal-case text-xl pr-4" href="/about">About</a>
