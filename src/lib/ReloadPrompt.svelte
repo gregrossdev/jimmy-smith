@@ -21,10 +21,6 @@
 		offlineReady.set(false)
 		needRefresh.set(false)
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 3967c20d9c0844fbc01931c001ae47b9d282d561
 	$: toast = $offlineReady || $needRefresh
 </script>
 
@@ -52,18 +48,7 @@
 	</div>
 {/if}
 
-<<<<<<< HEAD
 <style>
-=======
-<div class='pwa-date'>
-	{ buildDate }
-</div>
-
-<style>
-	.pwa-date {
-		visibility: hidden;
-	}
->>>>>>> 3967c20d9c0844fbc01931c001ae47b9d282d561
 	.pwa-toast {
 		position: fixed;
 		right: 0;
