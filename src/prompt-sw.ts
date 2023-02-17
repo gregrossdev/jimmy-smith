@@ -23,4 +23,3 @@ registerRoute(new NavigationRoute(
   createHandlerBoundToURL('/'),
   { allowlist },
 ))
-

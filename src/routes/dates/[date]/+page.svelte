@@ -4,12 +4,6 @@
     const {date, title, content} = api
 </script>
 
-<svelte:head>
-    <title>Home</title>
-    <meta name="description"
-          content="Svelte demo app"/>
-</svelte:head>
-
 
 <article class="prose">
     <h2>{date.slice(5)}</h2>
