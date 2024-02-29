@@ -4,7 +4,7 @@
     // const {date, title, content} = api
     const {title, content} = api
 </script>
-</script>
+
 
 <svelte:head>
     <title>Home</title>
