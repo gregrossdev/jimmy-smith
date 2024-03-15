@@ -22,8 +22,31 @@ function getAllMonthsAndDays(year) {
 // Example usage:
 const year = 2023;
 const allMonthsAndDays = getAllMonthsAndDays(year);
+
+function getMonthName(month) {
+    const monthNames = [
+      "January", "February", "March", "April", "May", "June", "July",
+      "August", "September", "October", "November", "December"
+    ];
+    return monthNames[month - 1];
+  }
 	
 </script>
+
+<style>
+  /* Style for the flex container */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+  }
+
+  /* Style for each month */
+  .month {
+    margin: 10px; /* Add some spacing between months */
+  }
+</style>
 
 <svelte:head>
 	<title>Dates</title>
@@ -32,13 +55,13 @@ const allMonthsAndDays = getAllMonthsAndDays(year);
 
 <div class="flex-col flex-wrap">
 	{#each allMonthsAndDays as { month, days }}
-  <div>
-    <h2>Month {month}</h2>
-    <ul>
+  <div class="month">
+    <h2>{getMonthName(month)}</h2>
+    <ul class="flex-container">
       <!-- Iterate over the days of the month -->
       {#each days as day}
         <li>
-          <a href={`/dates/${day}`}>{day}</a>
+          <a href={`/dates/2023-${month}-${day}`}>{day}</a>
         </li>
       {/each}
     </ul>
