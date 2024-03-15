@@ -1,7 +1,7 @@
 <script>
-    // export let data;
-    // const {api} = data;
-    // const {date, title, content} = api
+    export let data;
+    const {api} = data;
+    const {date, title, content} = api
 </script>
 
 
